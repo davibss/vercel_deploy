@@ -1,4 +1,5 @@
 import express, { Request, Response } from 'express';
+const generator = require("@asyncapi/generator");
 
 const app = express();
 const port = process.env.PORT || 8080;
