@@ -268,7 +268,7 @@ app.get('/', async (_req: Request, res: Response) => {
 app.get('/ping', async (_req: Request, res: Response) => {
     const generatorInstance = new generator(
         "./node_modules/cpp-template", 
-        "/home/davibss/.client_generator_tmp/output", 
+        "/tmp/.client_generator_tmp", 
         {
             forceWrite: true
         }

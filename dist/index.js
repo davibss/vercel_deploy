@@ -276,7 +276,7 @@ app.get('/', (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     return res.send('Express Typescript on Vercel');
 }));
 app.get('/ping', (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const generatorInstance = new generator_1.default("./node_modules/cpp-template", "/home/davibss/.client_generator_tmp/output", {
+    const generatorInstance = new generator_1.default("./node_modules/cpp-template", "/tmp/.client_generator_tmp", {
         forceWrite: true
     });
     yield generatorInstance.generateFromString(spec);
